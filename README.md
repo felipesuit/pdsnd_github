@@ -7,7 +7,7 @@ Bikeshare
 ### Description
 The project is a python code that allows the user to explore the information of the rental company Bikeshare.
 
-The user can view the data and statistics on the use of the platform thanks to the interaction that the code allows.
+The user can view the data and statistics on the use of the platform for the 3 cities that have information (New York City, Washington and Chicago) thanks to the interaction that the code allows.
 
 ### Files used
 bikeshare.py
