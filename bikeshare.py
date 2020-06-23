@@ -286,24 +286,24 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        # DEFINING VARIABLE end = 5
-        end  = 5
+        # DEFINING VARIABLE end = 10
+        end  = 10
                   
-        # ASK USER IF HE WANTS TO SEE THE FIRST 5 ROWS OF DATA
-        View_Rows = input('Do you want to see the first 5 rows of raw data? type yes or no').lower()
+        # ASK USER IF HE WANTS TO SEE THE FIRST 10 ROWS OF DATA
+        View_Rows = input('Do you want to see the first 10 rows of raw data? type yes or no').lower()
         
         while View_Rows == 'yes':
             # IN CASE "end" IS GREATER THAN THE NUMBER OF ROWS, ASSIGN "end" AS THE NUMBER OF ROWS REMAINING FROM THE DATAFRAME
             if end > df.shape[0]:
                 end = df.shape[0]
-            # SHOW THE FIRST 5 ROWS BETWEEN "end" AND "end" - 5
-            print(df.iloc[end-5:end]) 
+            # SHOW THE FIRST 10 ROWS BETWEEN "end" AND "end" - 10
+            print(df.iloc[end-10:end]) 
             # MAKES A LINE TO BETTER VIEW THE REQUESTED DATA
             print('--'*40) 
-            # MOVE THE SELECTION INDEX "end" TO SHOW THE FOLLOWING 5 ROWS IN CASE THE USER REQUESTS
-            end = end + 5  
+            # MOVE THE SELECTION INDEX "end" TO SHOW THE FOLLOWING 10 ROWS IN CASE THE USER REQUESTS
+            end = end + 10  
             # WITH THIS, THE VARIABLE View_Rows IS OVERWRITTEN
-            View_Rows = input('Do you want to see the next 5 rows of raw data? type yes or no').lower()
+            View_Rows = input('Do you want to see the next 10 rows of raw data? type yes or no').lower()
             
             
             
